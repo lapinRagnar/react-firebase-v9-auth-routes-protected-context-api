@@ -18,7 +18,7 @@ export const AuthContextProvider = ({children}) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log(currentUser)
       setUser(currentUser)
-      
+
       return () => {
         unsubscribe()
       }
@@ -27,7 +27,7 @@ export const AuthContextProvider = ({children}) => {
 
 
   return (
-    <UserContext.Provider value={{createUser, auth}}>
+    <UserContext.Provider value={{createUser, auth, user}}>
       {children}
     </UserContext.Provider>
   )
