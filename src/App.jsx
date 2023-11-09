@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import Contact from './pages/contact/Contact'
 import Account from './components/Account'
 import { AuthContextProvider } from './context/AuthContext'
+import ProtectedRoot from './components/ProtectedRoot'
 function App() {
 
 
@@ -29,12 +30,16 @@ function App() {
           <Route path="/auth" element={<AuthLayout />}>
             <Route path="signup" element={<Signup />} />
             <Route path="signin" element={<Signin />} />
-            <Route path="account" element={<Account />} />
+            <Route path="account" element={
+              <ProtectedRoot>
+                <Account />
+              </ProtectedRoot>
+            } />
           </Route>
         </Routes>
 
       </AuthContextProvider>
-      
+
     </div>
   )
 }
