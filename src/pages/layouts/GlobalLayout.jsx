@@ -2,11 +2,16 @@ import { Outlet } from "react-router-dom"
 const GlobalLayout = () => {
   return (
     <div>
-      <div>Layout Principale</div>
-      <div>
-        <Outlet />
-      </div>
-      <div>Footer</div>
+    <h1 className="text-center text-5xl font-bold">
+    Firebase Auth & Context api
+    </h1>
+    <div>Layout Principale</div>
+
+    <div>
+      <Outlet />
+    </div>
+    
+    <div>Footer</div>
     </div>
   )
 }
