@@ -10,6 +10,7 @@ import Signin from './components/Signin'
 
 import Home from './pages/Home'
 import Contact from './pages/contact/Contact'
+import Account from './components/Account'
 function App() {
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="signup" element={<Signup />} />
           <Route path="signin" element={<Signin />} />
+          <Route path="account" element={<Account />} />
         </Route>
       </Routes>
     </div>
