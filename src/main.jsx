@@ -7,13 +7,15 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import GlobalLayout from './routes/globalLayout.jsx'
+import GlobalLayout from './pages/layouts/GlobalLayout.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <GlobalLayout />,
+    errorElement: <ErrorPage />,
   },
 ]);
 
