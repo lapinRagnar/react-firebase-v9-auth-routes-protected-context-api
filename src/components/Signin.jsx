@@ -25,7 +25,7 @@ const Signin = () => {
       <button
         className="my-5 w-[150px] rounded-lg bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
       >
-        Sign up
+        Sign In
       </button>
 
       <p className="py-4">
