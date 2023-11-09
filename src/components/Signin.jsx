@@ -17,7 +17,7 @@ const Signin = () => {
 
     try {
       await signIn(email, password)
-      navigate('/auth/account')
+      navigate('/')
       console.log('you are logged in')
     } catch (error) {
       setError(error.message)
