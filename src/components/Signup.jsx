@@ -19,7 +19,7 @@ const Signup = () => {
 
     try {
       await createUser(email, password)
-      navigate('/account')
+      navigate('/')
 
     } catch (error) {
       setError(error.message)
